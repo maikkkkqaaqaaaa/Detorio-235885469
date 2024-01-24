@@ -5,7 +5,7 @@ class Program
     static void Main(string[] args)
     {
         // CONVERT POUNS TO KILOGRAMS
-        Console.Write("Enter weight in pounds: ");
+        Console.WriteLine("Enter weight in pounds: ");
         double pounds = Convert.ToDouble(Console.ReadLine());
         double kilograms = pounds * 0.453592;
         Console.WriteLine($"Weight in pounds: {pounds}");
@@ -23,7 +23,7 @@ class Program
         Console.WriteLine("====================================");
 
         // CONVERT FAHRENHEIT TO CELSIUS
-        Console.Write("Enter temperature in Fahrenheit: ");
+        Console.WriteLine("Enter temperature in Fahrenheit: ");
         double fahrenheit = Convert.ToDouble(Console.ReadLine());
         double celsius = (fahrenheit - 32) * 5 / 9;
         Console.WriteLine($"Temperature in Fahrenheit: {fahrenheit}");
@@ -60,19 +60,18 @@ class Program
         string faction4 = "Earthshaker";
         string story = $"In a world where magic and technology coexist, there are people who possess extraordinary powers, abilities, equipment, and items. They are called the Chosen, and they are the guardians of peace and justice." +
             $"The Chosen are divided into four factions, each with its own specialty and philosophy. " +
-            $"{chosen4}, the chose {faction1} who focuses on offensive and destructive magic, using weapons like flamethrowers, grenades, and rockets." +
+            $"{chosen4}, the chosen {faction1} who focuses on offensive and destructive magic, using weapons like flamethrowers, grenades, and rockets." +
             $"{chosen1}, the chosen {faction2} who specialized in defensive and supportive magic, using items like shields, potions, and crystals." +
             $"{chosen3}, the chosen {faction3} who excels in speed and mobility, using abilities like teleportation, flight, and invisibility." +
-            $"{chosen2}, the chosen {faction3} who masters the power of nature and life, using equipment like plants, animals, and golems." +
             $"{chosen2}, the chosen {faction4} who masters the power of nature and life, using equipment like plants, animals, and golems." +
-            $"Will they able to succeed? Only time will tell...";
+            $"Will they able to succeed?";
         Console.WriteLine(story);
         
         Console.WriteLine("====================================================");
       
 
-*/ Part 2
-   // Number Pattern Using A Loop
+        // Part 2
+             // Number Pattern Using A Loop
         Console.Write("Enter a number: ");
         int input = int.Parse(Console.ReadLine());
 
@@ -90,43 +89,40 @@ class Program
             }
             Console.WriteLine();
         }
-    }
     
-    Console.WriteLine("====================================================");
+        Console.WriteLine("====================================================");
 
         // Number Pattern Using A Loop
         Console.Write("Enter a number: ");
-        int input = int.Parse(Console.ReadLine());
+        int GEH = int.Parse(Console.ReadLine());
 
-        if (input <= 0)
+        if (GEH <= 0)
         {
             Console.WriteLine("Invalid input");
             return;
         }
 
-        int sum = 0;
-        for (int i = 1; i <= input; i++)
+        int sum1 = 0;
+        for (int i = 1; i <= GEH; i++)
         {
-            sum += i;
+            sum1 += i;
         }
 
         Console.WriteLine($"Sum of numbers from 1 to {input}: {sum}");
-    }
-}
 
-    Console.WriteLine("====================================================");
+        Console.WriteLine("====================================================");
 
         // Number Pattern Using A Loop
         Console.Write("Enter a number: ");
-        int input = int.Parse(Console.ReadLine());
+        int GEH2 = int.Parse(Console.ReadLine());
 
-        if (input <= 0)
+        if (GEH2 <= 0)
         {
             Console.WriteLine("Invalid input");
             return;
         }
 
-        for (int i = input; i >= 1; i--)
+        for (int i = GEH2; i >= 1; i--)
         {
             for (int j = 1; j <= i; j++)
             {
