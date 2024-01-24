@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 class Program
 {
@@ -32,18 +32,20 @@ class Program
         Console.WriteLine("====================================");
 
         // CALCULATE AVERAGE AGE OF STUDENTS
+        int[] ages = new int [10];
         int sum = 0;
-        for (int i = 1; i <= 10; i++)
+        
+        for (int i = 0; i < 10; i++)
         {
-            Console.Write($"Enter age of student {i}: ");
-            int age = Convert.ToInt32(Console.ReadLine());
-            sum += age;
+            Console.Write($"Enter age of student {i + 1}: ");
+            ages[i] = Convert.ToInt32(Console.ReadLine());
+            sum += ages[i];
         }
         double averageAge = (double)sum / 10;
         Console.WriteLine("Ages of all students:");
-        for (int i = 1; i <= 10; i++)
+        for (int i = 0; i < 10; i++)
         {
-            Console.WriteLine($"Student {i}: {i} years old");
+            Console.WriteLine($"Student {i + 1}: {ages[i]} years old");
         }
         Console.WriteLine($"Average age of students: {averageAge}");
 
@@ -99,17 +101,24 @@ class Program
         if (GEH <= 0)
         {
             Console.WriteLine("Invalid input");
-            return;
         }
-
-        int sum1 = 0;
-        for (int i = 1; i <= GEH; i++)
+        else
         {
-            sum1 += i;
+
+            int GEH1 = 0;
+            for (int i = 1; i <= GEH; i++)
+            {
+                Console.Write(i);
+                GEH1 += i;
+                if (i != GEH)
+                {
+                    Console.Write("+");
+                }
+            }
+            Console.WriteLine();
+            Console.WriteLine($"Output: {GEH1}");
         }
-
-        Console.WriteLine($"Sum of numbers from 1 to {input}: {sum}");
-
+        
         Console.WriteLine("====================================================");
 
         // Number Pattern Using A Loop
